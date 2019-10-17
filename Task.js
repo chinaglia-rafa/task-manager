@@ -23,11 +23,16 @@ class Task {
     return (this.currentColumn == 3) ? false : ++this.currentColumn;
   }
 
+  prevColumn() {
+    return (this.currentColumn == 0) ? false : --this.currentColumn;
+  }
+
   toHTML() {
     let task = document.createElement('div');
         task.classList.add('task');
         task.id = 'task-'+this.id;
         task.setAttribute('task-id', this.id);
+        task.title = "Clique em mim para mover-me para a direita!";
     let title = document.createElement('div');
         title.classList.add('task__title');
         title.innerText = this.name;

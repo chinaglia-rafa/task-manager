@@ -32,7 +32,7 @@ window.onload = function(event) {
     if (e.key == 'Escape') {
       fechar();
     }
-    if (e.key == 'Enter' && e.ctrlKey == true) {
+    if (e.key == 'Enter' && e.altKey == true) {
       if (modal.classList.contains('open')) {
         if (document.querySelector("#task-name").value == '' ||
             document.querySelector("#task-description").value == '')
