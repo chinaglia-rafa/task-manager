@@ -8,15 +8,32 @@
   <title>Task Manager</title>
 </head>
 <body>
+  <div class="modal" id="modal">
+    <div class="dialog">
+      <img src="assets/load.svg" width="100" height="100" alt="" class="loader">
+      <div class="dialog__title">Criando tarefa <span class="dialog__title__tip">[Ctrl + Enter] Salvar [Esc] Sair</span></div>
+      <div class="dialog__body">
+        <label class="label">
+          Nome da tarefa:
+          <input type="text" class="ipt" id="task-name">
+        </label>
+        <br />
+        <label class="label">
+          Descrição da tarefa:
+          <textarea class="ipt ipt--large" id="task-description"></textarea>
+        </label>
+      </div>
+    </div>
+  </div>
   <header>
     Mural de tarefas
-    <button id="addTask" class="btn header--right">Nova tarefa</button>
+    <button id="addTask" class="btn header--right btn--animated">Nova tarefa (F2)</button>
   </header>
-  <div class="progress-bar">
-    <div class="progress-bar__bar" style="background: tomato;"></div>
-    <div class="progress-bar__bar" style="background: green;"></div>
-    <div class="progress-bar__bar" style="background: cyan;"></div>
-    <div class="progress-bar__bar" style="background: purple;"></div>
+  <div class="progress-bar" id="progressBar">
+    <div class="progress-bar__bar" style="background: #4caf50;"></div>
+    <div class="progress-bar__bar" style="background: #f44336;"></div>
+    <div class="progress-bar__bar" style="background: #9c27b0;"></div>
+    <div class="progress-bar__bar" style="background: #00bcd4;"></div>
   </div>
 
   <div class="main-container">
