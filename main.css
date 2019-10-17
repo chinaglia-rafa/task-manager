@@ -1,0 +1,100 @@
+:root {
+  --primary-color: #5207F2;
+  --primary-text: white;
+  --secundary-color: #23D9B7;
+  --secundary-text: black;
+  --accent-color: #D7F205;
+  --accent-text: black;
+  --danger-color: #f44336;
+  --danger-text: white;
+  --background: #fefefe;
+
+  --dark-color: #212121;
+}
+
+body {
+  background: var(--background);
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+}
+
+header {
+  padding: 16px 0;
+  background: var(--dark-color);
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  position: relative;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+}
+
+.header--right {
+  position: absolute;
+  padding: 3px 16px;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.progress-bar {
+  height: 12px;
+  width: 100%;
+  background: #666;
+  font-size: 0;
+}
+
+.progress-bar .progress-bar__bar {
+  width: 25%;
+  height: 12px;
+  position: relative;
+  display: inline-block;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.panel {
+  width: 30%;
+  margin: 30px 10px 0 10px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.panel .panel__header {
+  background: var(--dark-color);
+  color: white;
+  padding: 6px 10px;
+}
+
+.panel .panel__body {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  height: 400px;
+  overflow: auto;
+}
+
+.task {
+  width: 80%;
+  margin: 5% auto;
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.task .task__title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin-bottom: 6px;
+}

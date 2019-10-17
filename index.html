@@ -1,0 +1,51 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway&display=swap" rel="stylesheet">
+  <title>Task Manager</title>
+</head>
+<body>
+  <header>
+    Mural de tarefas
+    <button id="addTask" class="btn header--right">Nova tarefa</button>
+  </header>
+  <div class="progress-bar">
+    <div class="progress-bar__bar" style="background: tomato;"></div>
+    <div class="progress-bar__bar" style="background: green;"></div>
+    <div class="progress-bar__bar" style="background: cyan;"></div>
+    <div class="progress-bar__bar" style="background: purple;"></div>
+  </div>
+
+  <div class="main-container">
+    <div class="panel" id="todoColumn">
+      <div class="panel__header">A fazer</div>
+      <div class="panel__body"></div>
+    </div>
+
+    <div class="panel" id="progressColumn">
+      <div class="panel__header">Em progresso</div>
+      <div class="panel__body"></div>
+    </div>
+
+    <div class="panel" id="reviewColumn">
+      <div class="panel__header">Revisão</div>
+      <div class="panel__body">
+
+      </div>
+    </div>
+
+    <div class="panel" id="doneColumn">
+      <div class="panel__header">Completas</div>
+      <div class="panel__body">
+
+      </div>
+    </div>
+  </div>
+</body>
+<script src="Task.js"></script>
+<script src="TaskManager.js"></script>
+<script src="main.js"></script>
+</html>
